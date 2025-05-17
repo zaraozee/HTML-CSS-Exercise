@@ -1,0 +1,70 @@
+body {
+    font-family: Tahoma;
+    display: flex; 
+    gap: 10px; 
+  }
+  .container {
+    width: 280px;
+    border-radius: 4px;
+    height: 260px;
+    border: none;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+  }
+  .container .thumbnail img{
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    object-position: 0 0;
+  }
+  .container .label {
+    position: absolute;
+    top: 140px;
+    left: 245px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 4px;
+    font-size: 10px;
+  }
+  .container .label-1{
+    position: absolute;
+    top: 140px;
+    left: 535px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 4px;
+    font-size: 10px;
+  }
+  .text {
+    display: flex;
+    flex-direction: row;
+    padding: 3px;
+    position: relative;
+    bottom: 10px;
+  }
+  .text .tool {
+    position: relative;
+    display: inline-block;
+  }
+  .text .tool .tool-text {
+    width: 250px;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 2;
+    visibility: hidden;
+    display: flex;
+  }
+  .text .tool:hover .tool-text {
+    visibility: visible;
+  }
+  .text img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin: 13px 7px 0 0;
+  }

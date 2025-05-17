@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Css Position</title>
+  <style>
+    body {
+      font-family: Arial;
+    }
+    .container {
+      color: white;
+      width: 200px;
+      height: 900px;
+      background-color: green;
+      position: fixed;
+      right: 0;
+      top: 0;
+    }
+    .opacity {
+      width: 2000px;
+      height: 9000px;
+      background-color: rgba(0, 0, 0, 0.3);
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      right: 0;
+    }
+    .box {
+      position: fixed;
+      padding-left: 20px;
+      background-color: white;
+      width: 350px;
+      height: 150px;
+      border-radius: 12px;
+      z-index: 999;
+      top: 35%;
+      left: 35%;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="side">right sidebar</div>
+  </div>
+  <div class="box">
+    <h2>Modal Title</h2>
+    <p>This is a modal</p>
+    <input type="button" value="Close">
+  </div>
+  <div class="opacity"></div>
+</body>
+</html>

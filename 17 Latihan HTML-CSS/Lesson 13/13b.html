@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nested Flexbox</title>
+  <style>
+    body {
+      font-family: 'Times New Roman', Times, serif;
+    }
+    .container {
+      display: flex;
+      width: 500px;
+      flex-direction: row;
+    }
+
+    .box-1 {
+      width: 100px;
+      background-color: pink;
+    }
+    .box-2 {
+      background-color: lightblue;
+      display: flex;
+      width: 200px;
+      padding: 0 0 10px 0;
+      flex-direction: column;
+    }
+    .b2 {
+      background-color: black;
+      color: white;
+      width: 40px;
+      padding: auto;
+    }
+    .box-3 {
+      display: flex;
+      justify-content: space-between;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class=box-1></div>
+    <div class="box-2">
+      <div class="b1">row 1</div>
+      <div class="box-3">
+        <div class="b2">row 2</div>
+        <div class="b2">row 2</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
